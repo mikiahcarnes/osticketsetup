@@ -7,8 +7,11 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 
 
 <h2> Software & Technologies  Used</h2>
+
 - Windows 10<br/>
-- VMware Workstation Pro (Virtual Machine)
+- VMware Workstation Pro</br>
+- XAAMP</br>
+- osTicket
 
   <h2> Prerequisites </h2>
 
