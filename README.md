@@ -15,12 +15,10 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 
   <h2> Prerequisites </h2>
 
-- Create a Virtual Machine in Azure
-- Install osTicket v1.15.8
-- Install HeidiSQL
-- Install MySQL
-- Install PHP
-- install Microsoft Visual C++ Redistributable
+- Windows 10 virtual machine
+- Install XAAMP (latest version)
+- Install osTicket (latest version)
+
   <h2>Steps</h2>
 <h3 align="center">Create Virtual Machine in Azure</h3>
 <br />
