@@ -10,44 +10,51 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 
 - Windows 10<br/>
 - VMware Workstation Pro</br>
-- XAAMP</br>
-- osTicket
+- XAMPP v8.2.12</br>
+- osTicket v1.18.1
 
-  <h2> Prerequisites </h2>
+  <h2> Objectives </h2>
 
-- Windows 10 virtual machine
+- Create Windows 10 virtual machine
 - Install XAAMP (latest version)
 - Install osTicket (latest version)
 
   <h2>Steps</h2>
-<h3 align="center">Create Virtual Machine in Azure</h3>
+<h3 align="center">Create Windows 10 Virtual Machine</h3>
 <br />
 <p>
-<h3 align="center">First, start by creating a Resource Group inside Azure.</h3>
+<h3 align="center">Note: Before you continue, you will want to download the <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank">Windows 10</a> iso file to your system.</h3>
 <br />
 </p>
 <p>
-	<img src="https://i.imgur.com/eBi5k2l.png" height="75%" width="100%" />
-</p>
-<p>
-<h3 align="center">Now, create a Windows 10 Virtual Machine (VM), typically with 2-4 Virtual CPUs. For username and password, it can be anything as we'll be using this info to remote in with our main computer. When creating the Virtual Machine (VM), allow Azure to create a new Virtual Network (Vnet):</h3>
-<br />
-</p>
-<p>
-	<img src="https://i.imgur.com/dEF1c7h.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Open your Remote Desktop Connection app on your computer and connect to your Virtual Machine that was created in Azure. </h3>
-<br />
-<p>
-	<img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/2e71fd86-4198-47aa-aa1a-d0aed1b8e0eb"/>
 	
+<div align="center">
+  <a href="https://youtu.be/CMGa6DsGIpc">
+    <img src="https://img.youtube.com/vi/CMGa6DsGIpc/0.jpg" alt="Watch the video" height="75%" width="50%">
+  </a>
+</div>
 
 </p>
+<p>
+<h3 align="center">I reccommend using Oracle VirtualBox to host your virtual machine. Use the video above for a simple walkthrough. You don't need more than 4gb(4096mb) memory, 2 cpu (1 if you have limited resources), and ~60gb storage. </h3>
+<br />
+</p>
+<p>
+	<img src="https://i.postimg.cc/CLzj7VN8/XAMPPControl-Panel.png" height="75%" width="100%" />
+</p>
 <br />
 <br />
-<h3 align="center">Now we need to install / Enable IIS in Windows. Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows features on or off" > Scroll down to "Internet Information Services (IIS).</h3>
+<h3 align="center">After you setup the Windows 10 virtual machine, you will want to open the browser in your machine, the default will be Edge, and download the latest version of <a href="https://www.apachefriends.org/download.html" target="_blank">XAMPP</a>. During installation, leave everything default. After you have XAMPP installed, go ahead and start Apache and MySQL. </h3>
+<br />
+<p>
+	<div align="center">
+  <img src="https://i.postimg.cc/1tztSwJj/os-Ticket-Install-Page.png" alt="Image 1" height="75%" width="45%">
+  <img src="https://i.postimg.cc/VsXCRQdG/os-Ticket-Git-Hub.png" alt="Image 2" height="75%" width="45%">
+</div>
+	
+</p>
+<br />
+<h3 align="center">Now that XAMPP is up and running, it's time to download the osTicket .zip folder. You can find the latest version of osTicket <a href="https://osticket.com/download/" target="_blank">here</a>. I circled what you need to click on each page to download the osTicket .zip folder only. After downloading the osTicket .zip folder, right click it and extract all.</h3>
 <br />
 <p>
 	<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" />
