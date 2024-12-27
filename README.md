@@ -54,14 +54,14 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 	
 </p>
 <br />
-<h3 align="center">Now that XAMPP is up and running, it's time to download the osTicket .zip folder. You can find the latest version of osTicket <a href="https://osticket.com/download/" target="_blank">here</a>. I circled what you need to click on each page to download the osTicket .zip folder only. After downloading the osTicket .zip folder, right click it and extract all.</h3>
+<h3 align="center">Now that XAMPP is up and running, it's time to download the osTicket .zip folder. You can find the latest version of osTicket <a href="https://osticket.com/download/" target="_blank">here</a>. I circled what you need to click on each page to download the osTicket .zip folder only. After downloading the osTicket .zip folder, right click it and extract all. After you get the osTicket folder extracted, I suggest renaming it to "osTicket".</h3>
 <br />
 <p>
-	<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" />
+	<img src="https://i.postimg.cc/zfN9gyXj/Path-Foros-Ticket-In-XAMPP.png" height="75%" width="100%" />
 </p>
 <br />
 <br />
-<h3 align="center">Once clicked, find the "Internet Information Services" expand it and then expand the "World Wide Web" tab. Afterward, expand the application Developer tab. Finally check the "CGI" button & press Ok. You will need CGI to download the PHP Manager. The PHP manager is a back-end web programming language that allows osTicket to run off a web browser.</h3>
+<h3 align="center">Now, we want to move the unzipped osTicket folder into your XAMPP server. You can do this by either right clicking and copying the folder then pasting it in the htdocs folder, or clicking crtl + x and then pasting it to the htdocs folder. The path for this is "C:\xampp\htdocs". After you paste the file, it should look like the image above. </h3>
 <br />
 <p>
   <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/a6af9c35-e10c-4d7e-b2c8-30ffbe128f08" height="75%" width="100%"/>
