@@ -76,207 +76,24 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 <h3 align="center">The next page will tell you that you are missing the configuration file. The above picture is the path to the ost-sampleconfig.php file which you need to rename to ost-config.php.</h3>
 <br />
 <p>
-  <img src="https://i.postimg.cc/nLbwL5tF/os-Ticket-Basic-Install.png"height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/nLbwL5tF/os-Ticket-Basic-Install.png" height="75%" width="100%"/>
 </p>
 <br/>
 <h3 align="center">This page is where you will setup where you will name your helpdesk and create the admin user. You do not have to use a real email for either of these but they do need to be different emails. Be sure to take note of your username and password for the admin user login.</h3>
 <br />
 <p>
-  <img src="https://i.postimg.cc/85nZ0Svt/Database-Set-Up.png"height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/85nZ0Svt/Database-Set-Up.png" height="75%" width="100%"/>
 </p>
 <br/>
 <h3 align="center">Go back to the XAMPP Control Panel and click on the Admin action beside MySQL. This will bring you to the phpmyadmin page shown above. On the left side of the page click new to create a new database. Name it whatever you want to.</h3>
 <br/>
 <p>
-  <img src="https://i.postimg.cc/fW7bhRy3/Database-New-User.png" height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/4xzrYK8L/Login-Info-Database.png" height="75%" width="100%"/>
 </p>
 <br/>
-<h3 align="center">DOWNLOAD MySQL </h3>
-<h3 align="center"> Download and install MySQL, Agree with any terms and agreements up until you get to the password portion. Here you can create a username and password for the database that you'll be using to store the Ticket Information used in osTicket. 
-</h3>
+<h3 align="center">Now we need to make a new user for the database. After the database is created you will see it to the left of the page at the bottom. Click on it and click on the privileges tab and click on add user account. You can name it whatever you what, but make sure the Host name is set to Local and localhost. Again, remember to take note of your username and password. Then, scroll down a bit and you will see the Global privileges section, go ahead and check all. Then scroll all the way down and click Go. After the database has been made go back to the osTicket setup page and type in the into. MySQL Hostname, MySQL Database, MySQL Usename, and MySQL Password.</h3>
 <p>
-  <img src="https://i.imgur.com/IVpLg40.png"75%" width="100%"/>
-<br/>
-  <img src="https://i.imgur.com/zdhWXNx.png" height="75%" width="100%" />
+  <img src="https://i.postimg.cc/T1hdkQ9S/After-Install.png" height="75%" width="100%" />
 </p>
 <br/>
-<h3 align="center">Install osTicket v1.15.8</h3>
-<br />
-<p>
-  Download osTicket (download from within lab files: link).
-</p>
-<p>
-	Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
-</p>
-	<img src="https://i.imgur.com/0MUJLMU.png" height="75%" width="100%" />
-	<img src="https://i.imgur.com/1h9goM8.png" height="75%" width="100%" />
-<p>
-	Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
-</p>
-<p>
-	<img src="https://i.imgur.com/pDikkgq.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Reload IIS (Open IIS, Stop and Start the server)</h3>
-<br />
-<p>
-	Go to sites -> Default -> osTicket:
-</p>
-<p>
-	<img src="https://i.imgur.com/QeWNlG3.png" height="75%" width="100%" />
-</p>
-<p>
-	On the right, click “Browse *:80”:
-</p>
-<p>
-	<img src="https://i.imgur.com/3iXhNbi.png" height="75%" width="100%"/>
-</p>
-<br />
-<br />
-<h3 align="center">Enable Extensions in IIS: Note that some extensions are not enabled</h3>
-<br />
-<p>
-	Go back to IIS, sites -> Default -> osTicket.
-</p>
-<p>
-	Double-click PHP Manager:
-</p>
-<p>
-	<img src="https://i.imgur.com/LFKo5Hs.png" height="75%" width="100%" />
-</p>
-<p>
-	Click “Enable or disable an extension”.
-</p>
-<p>
-	Enable: php_imap.dll.
-</p>
-<p>
-	Enable: php_intl.dll.
-</p>
-<p>
-	Enable: php_opcache.dll:
-</p>
-<p>
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
-</p>
-<br />
-<br />
-<h3 align="center">Refresh the osTicket site in your browser, observe the changes</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/6iSNd4H.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Rename</h3>
-<br />
-<p>
-	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
-</p>
-<p>
-	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<img src="https://i.imgur.com/TEw71SD.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Assign Permissions: ost-config.php</h3>
-<br />
-<p>
-	Disable inheritance -> Remove All:
-</p>
-<p>
-	<img src="https://i.imgur.com/1QtRWEF.png" height="75%" width="100%" />
-</p>
-<p>
-	New Permissions -> Everyone -> All:
-</p>
-<p>
-	<img src="https://i.imgur.com/YzsMXNX.png" height="75%" width="100%" />
-</p>
-<p>
-	<img src="https://i.imgur.com/k7x9yGR.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
-<br />
-<p>
-	Name Helpdesk.
-</p>
-<p>
-	Default email (receives email from customers):
-</p>
-<p>
-	<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" />
-	<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Download and Install HeidiSQL</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" />
-</p>
-<p>
-	Create a new session, root/Password1.
-</p>
-<p>
-	Connect to the session:
-</p>
-<p>
-	<img src="https://i.imgur.com/9t51ApR.png" height="75%" width="100%" "/>
-</p>
-<p>
-	Create a database called “osTicket”:
-</p>
-<p>
-	<img src="https://i.imgur.com/vXzmQqg.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser</h3>
-<br />
-<p>MySQL Database: osTicket</p>
-<p>
-	MySQL Username: root
-</p>
-<p>
-	MySQL Password: Password1:
-</p>
-<p>
-	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" />
-</p>
-<p>Click “Install Now!”</p>
-<p>Congratulations, hopefully it is installed with no errors!</hp>
-<p>
-	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Clean up</h3>
-<br />
-<p>
-	Delete: C:\inetpub\wwwroot\osTicket\setup:
-</p>
-<p>
-	<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" />
-</p>
-<p>
-	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/8wvWH0H.jpg" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center"> Congrats, You've Finished Installing osTicket.</h3>
+<h3 align="center">Your install page will look different from the one above, but nonetheless. You have now installed osTicket! You can now follow the instructions for Config file permissions. After that head over to the Admin Panel, which you will see a link to on the right of the page, and continue with configuring osTicket.</h3>
