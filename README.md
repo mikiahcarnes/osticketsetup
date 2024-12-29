@@ -36,7 +36,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 
 </p>
 <p>
-<h3 align="center">I reccommend using Oracle VirtualBox to host your virtual machine. Use the video above for a simple walkthrough. You don't need more than 4gb(4096mb) memory, 2 cpu (1 if you have limited resources), and ~60gb storage. </h3>
+<h3 align="center">I recommend using Oracle VirtualBox to host your virtual machine. Use the video above for a simple walkthrough. You don't need more than 4gb(4096mb) memory, 2 cpu (1 if you have limited resources), and 50-60gb storage. </h3>
 <br />
 </p>
 <p>
@@ -44,7 +44,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 </p>
 <br />
 <br />
-<h3 align="center">After you setup the Windows 10 virtual machine, you will want to open the browser in your machine, the default will be Edge, and download the latest version of <a href="https://www.apachefriends.org/download.html" target="_blank">XAMPP</a>. During installation, leave everything default. After you have XAMPP installed, go ahead and start Apache and MySQL. </h3>
+<h3 align="center">After you set up the Windows 10 virtual machine, you will want to open the browser in your machine, the default will be Edge, and download the latest version of <a href="https://www.apachefriends.org/download.html" target="_blank">XAMPP</a>. During installation, leave everything default. After you have XAMPP installed, go ahead and start Apache and MySQL. </h3>
 <br />
 <p>
 	<div align="center">
@@ -54,50 +54,41 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 	
 </p>
 <br />
-<h3 align="center">Now that XAMPP is up and running, it's time to download the osTicket .zip folder. You can find the latest version of osTicket <a href="https://osticket.com/download/" target="_blank">here</a>. I circled what you need to click on each page to download the osTicket .zip folder only. After downloading the osTicket .zip folder, right click it and extract all. After you get the osTicket folder extracted, I suggest renaming it to "osTicket".</h3>
+<h3 align="center">Now that XAMPP is up and running, it's time to download the osTicket .zip folder. You can find the latest version of osTicket <a href="https://osticket.com/download/" target="_blank">here</a>. I circled what you need to click on each page to download the osTicket .zip folder only. After downloading the osTicket .zip folder, right-click it and extract all. After you extract the osTicket folder, I suggest renaming it to "osTicket." </h3>
 <br />
 <p>
 	<img src="https://i.postimg.cc/zfN9gyXj/Path-Foros-Ticket-In-XAMPP.png" height="75%" width="100%" />
 </p>
 <br />
 <br />
-<h3 align="center">Now, we want to move the unzipped osTicket folder into your XAMPP server. You can do this by either right clicking and copying the folder then pasting it in the htdocs folder, or clicking crtl + x and then pasting it to the htdocs folder. The path for this is "C:\xampp\htdocs". After you paste the file, it should look like the image above. </h3>
+<h3 align="center">Now, we want to move the unzipped osTicket folder into your XAMPP server. You can do this by either right-clicking and copying the folder, then pasting it in the htdocs folder, or clicking ctrl + x and then pasting it to the htdocs folder. The path for this is "C:\xampp\htdocs." After you paste the file, it should look like the image above. </h3>
 <br />
 <p>
-  <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/a6af9c35-e10c-4d7e-b2c8-30ffbe128f08" height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/J4tx0MFw/localhostpath.png" height="75%" width="100%"/>
 </p>
 <br />
-<h3 align="center">Install PHP Manager</h3>
+<h3 align="center">Go back to the XAMPP control panel, make sure Apache and MySQL are started, and click on the Admin action beside Apache. It will likely open into the "localhost/dashboard/" link. Change dashboard to osTicket or whatever you changed the name of your osTicket folder to. It should look like the picture above. Click on the upload folder and click continue on the setup page for a default setup. You can always enable the other features later if you need them.</h3>
 <br />
 <p>
-<h3 align="center">Download the PHP manager file, and agree with all the terms. We've now downloaded the PHP manager into our operating system.</h3>
-<p>
-  <img src="https://i.imgur.com/pmwpPEu.png"height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/xTRXwz5n/pathforos-confignamechange.png"height="75%" width="100%"/>
 </p>
 <br/>
-<h3 align="center">Install Rewrite Module</h3>
+<h3 align="center">The next page will tell you that you are missing the configuration file. The above picture is the path to the ost-sampleconfig.php file which you need to rename to ost-config.php.</h3>
 <br />
 <p>
-<h3 align="center">Download the Rewrite Module file, agree with all the terms and it should now be installed onto the Computer.</h3>
-<p>
-  <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/28cf2dd0-d39e-45f8-a01b-61aec6657228"height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/nLbwL5tF/os-Ticket-Basic-Install.png"height="75%" width="100%"/>
 </p>
 <br/>
-<h3 align="center">CREATE DIRECTORY C:\PHP</h3>
+<h3 align="center">This page is where you will setup where you will name your helpdesk and create the admin user. You do not have to use a real email for either of these but they do need to be different emails. Be sure to take note of your username and password for the admin user login.</h3>
 <br />
 <p>
-<h3 align="center"> Open File Explorer, type, "C:\" in the search bar, Right-click and create a new folder called, "PHP". Download php-7.3.8-nts-Win32-VC15-x86.zip from<a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> Files You Need to Download</a>, Extract it by going to where you download the file, Right-click the PHP 7.3.8 file and press extract to the PHP Folder you just created.
-</h3>
-<p>
-  <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/18746085-a3cf-4f1f-b0d5-5cd73f969319"height="75%" width="100%"/>
+  <img src="https://i.postimg.cc/85nZ0Svt/Database-Set-Up.png"height="75%" width="100%"/>
 </p>
 <br/>
-<h3 align="center">VC_REDIST DOWNLOAD</h3>
+<h3 align="center">Go back to the XAMPP Control Panel and click on the Admin action beside MySQL. This will bring you to the phpmyadmin page shown above. On the left side of the page click new to create a new database. Name it whatever you want to.</h3>
 <br/>
-<h3 align="center"> Download and install VC_Redist, Agree with any terms and agreements and finish installing.
-</h3>
 <p>
-  <img src="https://i.imgur.com/Gx8ryBV.png"75%" width="100%"/>
+  <img src="https://i.postimg.cc/fW7bhRy3/Database-New-User.png" height="75%" width="100%"/>
 </p>
 <br/>
 <h3 align="center">DOWNLOAD MySQL </h3>
