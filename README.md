@@ -23,7 +23,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 <h3 align="center">Create Windows 10 Virtual Machine</h3>
 <br />
 <p>
-<h3 align="center">Note: Before you continue, you will want to download the <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank">Windows 10</a> iso file to your system.</h3>
+<h3 align="center">Note: Before you continue, you will want to download the <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank">Windows 10</a> iso file to your host system.</h3>
 <br />
 </p>
 <p>
